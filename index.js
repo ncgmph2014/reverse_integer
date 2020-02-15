@@ -8,12 +8,13 @@ var reverse = function(x) {
   let result = 0;
   let upperRange = Math.pow(2, 31) - 1;
   let lowerRange = -Math.pow(2, 31);
-  console.log(upperRange);
-  console.log(lowerRange);
+  //   console.log(upperRange);
+  //   console.log(lowerRange);
   //the variable declarartion for upper range and lower ranger work, but the if statements do not work for some reason
-  if (x === 0 || x > upperRange || x < lowerRange) {
+  // doesn't even work when you write it out
+  if (x === 0 || x > 2147483647 || x < -2147483648) {
     result = 0;
-    console.log("this is craazy");
+    //console.log("this is craazy");
   } else {
     for (let i = numberArr.length; i >= 0; i--) {
       if (numberArr[i] == "0") {
